@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.eb8185de.css",
-    "main.js": "/Portfolio/static/js/main.0cbdba7e.js",
+    "main.js": "/Portfolio/static/js/main.f455ec12.js",
     "static/js/186.0db7b214.chunk.js": "/Portfolio/static/js/186.0db7b214.chunk.js",
     "static/media/Reedifica-img03.webp": "/Portfolio/static/media/Reedifica-img03.0f08d64580c04a1fa4a7.webp",
     "static/media/Reedifica-img02.webp": "/Portfolio/static/media/Reedifica-img02.fdf88cdd70b192fc33d2.webp",
@@ -71,11 +71,11 @@
     "static/media/wave-1.svg": "/Portfolio/static/media/wave-1.0cbddbf9afd44535a80a.svg",
     "static/media/curveNegative.svg": "/Portfolio/static/media/curveNegative.e0073195d9cfba0ba807.svg",
     "main.eb8185de.css.map": "/Portfolio/static/css/main.eb8185de.css.map",
-    "main.0cbdba7e.js.map": "/Portfolio/static/js/main.0cbdba7e.js.map",
+    "main.f455ec12.js.map": "/Portfolio/static/js/main.f455ec12.js.map",
     "186.0db7b214.chunk.js.map": "/Portfolio/static/js/186.0db7b214.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb8185de.css",
-    "static/js/main.0cbdba7e.js"
+    "static/js/main.f455ec12.js"
   ]
 }
