@@ -4,7 +4,6 @@ function Typewriter({ className }) {
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const [delay, setDelay] = useState(200);
   const titles = useMemo(
     () => [
       "UI Designer",
@@ -15,30 +14,34 @@ function Typewriter({ className }) {
     []
   );
   const typingSpeed = 50;
+  const deletingSpeed = 50;
+  const delayBetweenTitles = 4500;
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const currentIndex = index % titles.length;
-      const currentTitle = titles[currentIndex];
+    const timer = setTimeout(
+      () => {
+        const currentIndex = index % titles.length;
+        const currentTitle = titles[currentIndex];
 
-      if (!isDeleting) {
-        setText(currentTitle.substring(0, text.length + 1));
-      } else {
-        setText(currentTitle.substring(0, text.length - 1));
-      }
-
-      if (!isDeleting && text === currentTitle) {
-        setIsDeleting(true);
-        setDelay(typingSpeed);
-      } else if (isDeleting && text === "") {
-        setIsDeleting(false);
-        setIndex((index) => index + 1);
-        setDelay(200);
-      }
-    }, delay);
+        if (!isDeleting) {
+          setText(currentTitle.substring(0, text.length + 1));
+          if (text === currentTitle) {
+            setIsDeleting(true);
+            setTimeout(() => {}, delayBetweenTitles);
+          }
+        } else {
+          setText(currentTitle.substring(0, text.length - 1));
+          if (text === "") {
+            setIsDeleting(false);
+            setIndex((index) => index + 1);
+          }
+        }
+      },
+      isDeleting ? deletingSpeed : typingSpeed
+    );
 
     return () => clearTimeout(timer);
-  }, [index, isDeleting, delay, text, titles]);
+  }, [index, isDeleting, text, titles]);
 
   return (
     <h1 className={className} id="site-title">
