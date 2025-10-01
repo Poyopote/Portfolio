@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "tailwindcss": "^4.1.12",
+    "tailwindcss": "^4.1.13",
     "autoprefixer": "^10.4.21"
   }
 }
