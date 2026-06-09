@@ -1,15 +1,15 @@
 $customBlack: #222222;
 $customWhite: #ffffff;
-$primary: #111a27; //063148 ou 0D141F
-$customMetalGreen: #092c2b; // #143236;
-$secondary: #105650; //#247980;
+$primary: #111a27;
+$customMetalGreen: #092c2b;
+$secondary: #105650;
 $customCyan: #4ab7e7;
-$customEmerald: #12a594; //#62D29D;
+$customEmerald: #12a594;
 $customLightBlue: #7cdac5;
-$customWhiteBlue: #c2e6ff; //#CEF3FF;
-$customLightGray: #eceeed; //#E9EFE4;
+$customWhiteBlue: #c2e6ff;
+$customLightGray: #eceeed;
 $customDarkGray: #1b1b1b;
-$customSpace: #112840; //#358BAB;
+$customSpace: #112840;
 
 $colors: (
   "black": $customBlack,
@@ -21,7 +21,6 @@ $colors: (
   "emerald": $customEmerald,
   "LightBlue": $customLightBlue,
   "WhiteBlue": $customWhiteBlue,
-
   "LightGray": $customLightGray,
   "DarkGray": $customDarkGray,
 );
