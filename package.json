@@ -11,13 +11,14 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
-    "vue3-lottie": "^3.3.1",
     "nuxt": "^3.13.2",
-    "vue": "^3.5.0"
+    "unstorage": "^1.17.5",
+    "vue": "^3.5.0",
+    "vue3-lottie": "^3.3.1"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "sass": "^1.77.6",
-    "autoprefixer": "^10.4.20"
+    "autoprefixer": "^10.4.20",
+    "sass": "^1.77.6"
   }
 }
